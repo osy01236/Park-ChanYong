@@ -1,0 +1,16 @@
+* { /* 메뉴 깔끔하게 만들기 위해 크기 변동없게 하는거*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(254, 225, 255);
+}
+#wrap{
+    width: 1200px;/* 최대 너비 */
+    position: relative;  
+    margin: 0 auto;
+}
+
+#header{
+    padding: 10px 20px;
+
+}
