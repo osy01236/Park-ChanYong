@@ -1,0 +1,16 @@
+         #body{
+            background-color: rgb(5, 43, 95);
+         }
+         
+         
+         #box1{
+        width: 1200px;
+        margin: auto;
+        background-color: rgb(170, 225, 239);
+        text-align: center;
+        }
+        .img {
+           width: 1200px;
+           display: block;
+           margin: 0 auto;      /* 이미지 가운데 */
+        }
