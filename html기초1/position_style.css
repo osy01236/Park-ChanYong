@@ -1,0 +1,33 @@
+
+*{ padding: 0; margin: 0;}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background: gold;
+    left: 50px;
+
+}
+#box2{
+    width:150px;
+    height:150px;
+    background: coral;
+    position: relative;
+    right: 100px;
+    top : 50px;
+}
+#box2:hover{ /*마우스 커서가 해당위에 올라오면 동작해라    */
+    right:0px;
+    transition: all 1s;
+    
+
+
+}
+#box3{
+    width: 120px;
+    height: 120px;
+    background: rgb(255, 216, 254);
+    position: absolute;
+    right: 100px;
+    top : 50px;
+}

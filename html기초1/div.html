@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #div{
+            
+            border : 2px solid black;
+        }
+        #bluebox{
+            background:blue; width:25%
+            
+        }
+        .box{
+            
+            background-color: darkgoldenrod;
+        }
+        .rbox{
+            background-color: red;
+        }
+        /* style 태그는 css의 영역을 나타냄*/
+        /* 태그 선택자 
+            - 태그명 을 선택하기 div, img, span 등등
+            - id 로 선택하기 #선택자(아이디앞에 #), id는 고유한 이름 (html에서)
+            - class로 선택하기 .선택자, class는 태그 그룹화 목적
+        
+            input[type=''] ->input 태그 중에 type이 text인것만 선택
+            input[name='email']->input 태그중에 name이 email인것만 선택
+           
+            -가상선택자
+            
+            단위 : 절대단위, 상대단위
+            절대단위 : px, pt(포인트(점))
+            상대단위 : % , em , rem, vh, vp, 
+        */
+    </style>
+</head>
+<body>
+    
+
+    <div id="redbox" class="rbox">
+        나는 빨간 상자입니다.
+    </div>
+    <div id="bluebox">
+        나는 파랑 상자입니다.
+    </div>
+    <div class="box">
+        클래스는 박스입니다.
+    </div>
+
+    
+</body>
+</html>
