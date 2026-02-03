@@ -1,8 +1,8 @@
 * { /* 메뉴 깔끔하게 만들기 위해 크기 변동없게 하는거*/
-    padding: 0px;
+    padding: 0px; /*태그 크기의 영향을 주는것-padding*/
     margin: 0px;
     box-sizing: border-box;
-    background-color: rgb(254, 225, 255);
+    
 }
 #wrap{
     width: 1200px;/* 최대 너비 */
@@ -13,4 +13,38 @@
 #header{
     padding: 10px 20px;
 
+}
+#logoWrap{
+    height: 50px;
+
+}
+#logoWrap img{    /*id가 logoWrap 인 태그 밑에 있는 img태그 선택 */
+    height: 100%;
+    
+}
+/* 브라우저에 이미지 표현2*/
+
+#logoImg{
+    height: 50px;
+    background: url("./image.jpg") no-repeat;
+    width: 100px;
+    background-size: contain;
+    
+}
+
+.menuLink{
+    font-size: 25px;  /*글자 크기 변경*/
+    color: black;   /*글자 색 변경*/
+    text-decoration: none ;   /*글자 효과 */
+    font-weight: 700;  /*글자 굵기 변경*/
+    padding: 3px 7px;
+    margin: 0 20px;
+}
+/*정렬 하기 위해, 태그들을 배치 하기 위해 */
+#logoWrap{
+    float: left;
+
+}
+#logoImg{
+    float: left;
 }

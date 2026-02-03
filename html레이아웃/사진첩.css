@@ -1,0 +1,37 @@
+.imgbox{
+    margin-top: 20px;
+    height: 300px;
+}
+.imgcard{
+    float: left;
+    height: 300px;
+    width: 150px;
+    margin: 0 10px;
+
+}
+.imgcard img{
+    width: 100%;
+}
+.imgcard2{
+    height:300px;
+    width:150px;
+    margin:0 10px;
+    float:left;
+    background:url("./image.jpg") no-repeat;
+    background-size: contain;
+
+}
+/*이미지를 다른 걸로 가져와서 쓸 경우에 */
+/* .imgcard2.a{
+    background: url("./image.jpg") no-repeat;
+    background-size: cover;
+}
+.imgcard2.b{
+    background: url("./image1.jpg") no-repeat;
+    background-size: cover;
+}
+.imgcard2.c{
+    background: url("./image2.jpg") no-repeat;
+    background-size: cover;
+}
+ */

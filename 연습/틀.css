@@ -1,4 +1,4 @@
-         *{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* 패딩 포함 크기 계산 */
@@ -88,24 +88,3 @@ header ul {
     background: rgb(17, 17, 17);
     height: 150px;
 }
-         
-         
-
-         /*여기부터 업데이트 내용   */
-         
-         
-         #body{
-            background-color: rgb(222, 234, 251);
-            margin: 20px 100px;
-         }
-         
-         
-         .box1{
-        max-width: 500px;   /* 최대만 1200 */
-        width: 100%;         /* 화면에 맞게 줄어듦 */
-        margin top: 60px;
-        background-color: rgb(170, 225, 239);
-        text-align: center;
-        
-        }
-        
