@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 패딩 포함 크기 계산 */
+}
+.header{
+    width: 1200px;
+    position: fixed;
+    height: 80px;
+    background: rgb(17, 17, 17);
+    box-sizing: border-box;
+    
+}
+.square{
+
+   width: 1200px;
+    padding: 20px;
+    background: rgb(17, 17, 17);
+    position: relative;
+    
+    z-index: 1;
+    margin: 0px;
+}
+header>ul>li {
+ 
+  height: 80px;
+  width: 180px;
+  list-style: none;
+  display: flex;
+  align-items: center;    /* 세로 가운데 */
+  justify-content: center; /* 가로 가운데 */
+  
+   
+}
+nav>ul>li a{
+    color:white;
+    width: 200px;
+    display: block;
+    background: rgb(17, 17, 17);
+    padding: 10px 80px;
+
+}
+header ul {
+     display: flex;
+     justify-content: space-between; /* 양 끝에 배치 + 균등 간격 */
+  align-items: center;           /* 세로 가운데 정렬 */
+  list-style: none;
+  padding: 0px;
+
+ 
+}
+.body{
+    width: 1200px;
+    height: 2815px;
+}
+#logo{
+    width: 40px;  
+    height: 50px;  
+    object-fit: cover; 
+}
+.main1{
+    width: 1200px;
+    background: rgb(228, 85, 133);
+    height: 802px;
+}
+.blank{
+    width: 1200px;
+    height: 135px;
+    background: white;
+}
+.footer{
+    width: 1200px;
+    background: rgb(17, 17, 17);
+    height: 400px;
+    box-sizing: border-box;
+}
+#footer_team{
+    width: 1200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.footer_blank{
+    width: 1200px;
+    background: rgb(17, 17, 17);
+    height: 150px;
+}
+
+/* ========================업데이트 부분========================= */
+
+#body{
+    background-color: #2a323f;
+}
+/* 전체 배경(양옆까지 쭉) */
+.updatesMain{
+   width: 1200px;
+  /* margin: 0 auto; */
+  padding-top: 83px;
+}
+
+
+/* 가운데 영역(스크린샷처럼 가운데 박스) */
+.updates1{
+  width: 1200px;            
+  margin: 0  auto;          /* 가운데 정렬 */
+  background: #17376f;     
+  padding: 80px 120px;     /* 안쪽 여백 */
+  border-radius: 6px;      /* 모서리 약간 둥글게 (원하면 삭제) */
+  color: white;
+}
+
+.updatesList{
+  margin-top: 30px;
+  /* text-align: center;    업데이트 리스트안의 글자들 가운데 정렬 center */
+}
+.updatesList1{
+  margin-top: 0;
+  /* text-align: center;   */
+}
+.updatesList2{
+  margin-top: 0;
+  /* text-align: center;   */
+}
+
+.card{
+  width: 580px;
+  display: inline-block; /* 옆으로 배치 */
+  margin: 10px;      /* 업데이트 내역 중간 간격 */
+  background: rgb(170, 207, 242);
+  border-radius: 12px;   /*업데이트 내역 모서리*/
+  padding: 20px;
+  
+  vertical-align: top; /*카드 높이가 달라도 위쪽 기준 맞추기 도움받음*/
+}
+
+
+
+/*  이미지 */
+.updateimg{
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 3px;  /*이미지 아래 글자랑 사이부분 간격*/
+}
+
+#span{
+    font-size: 16px;
+    
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+}
+.h2{
+    position: relative;
+    color: rgb(164, 162, 13);
+}

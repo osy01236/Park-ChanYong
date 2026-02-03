@@ -89,7 +89,7 @@ header ul {
     height: 150px;
 }
 
-/* ------------------------------------------------------- */
+/* ========================업데이트 부분========================= */
 
 #body{
     background-color: #2a323f;
@@ -106,9 +106,10 @@ header ul {
 .updates1{
   width: 1200px;            
   margin: 0  auto;          /* 가운데 정렬 */
-  background: #3d80f3;     
+  background: #17376f;     
   padding: 80px 120px;     /* 안쪽 여백 */
   border-radius: 6px;      /* 모서리 약간 둥글게 (원하면 삭제) */
+  color: white;
 }
 
 .updatesList{
@@ -132,7 +133,7 @@ header ul {
   border-radius: 12px;   /*업데이트 내역 모서리*/
   padding: 20px;
   
-  vertical-align: top; /*카드 높이가 달라도 위쪽 기준 맞추기*/
+  vertical-align: top; /*카드 높이가 달라도 위쪽 기준 맞추기 도움받음*/
 }
 
 
@@ -146,7 +147,15 @@ header ul {
   display: block;
   margin-bottom: 3px;  /*이미지 아래 글자랑 사이부분 간격*/
 }
+
 #span{
     font-size: 16px;
-    margin-left: 360px;
+    
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+}
+.h2{
+    position: relative;
+    color: rgb(164, 162, 13);
 }
