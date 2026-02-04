@@ -29,3 +29,11 @@ public class 드론 {
 //html에서 할일 -> 데이터 출력할 영역을태그로 만들고 꾸미기
 
 // html > DB > 자바
+
+
+
+arrayList<클래스명> list = new ArrayList
+
+list.add (new 클래스명(컬럼명들))
+
+public static ArrayList<클래스명> 화면에 보내기(ArrayList<클래스명> list)

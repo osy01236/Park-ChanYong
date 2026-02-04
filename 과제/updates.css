@@ -74,22 +74,22 @@ header ul {
 .footer{
     width: 1200px;
     background: rgb(10, 20, 40);
-    height: 400px;
+    height: 200px;
     box-sizing: border-box;
-    margin-top: 100px;
 }
 #footer_team{
     width: 1200px;
     color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
-    
+    align-items: center;
+
+
 }
 .footer_blank{
     width: 1200px;
     background: rgb(10, 20, 40);
-    height: auto;
+    height: 150px;
 }
 
 /* ========================업데이트 부분========================= */
@@ -131,33 +131,36 @@ header ul {
 .card{
   width: 560px;
   display: inline-block; /* 옆으로 배치 */
-  margin: 18px;      /* 업데이트 내역 중간 간격 */
+  margin: 18px;      
   margin-bottom: 18px;
   background: rgb(170, 207, 242);
-  border-radius: 12px;   /*업데이트 내역 모서리*/
+  border-radius: 12px;   /*모서리*/
   padding: 20px;
   vertical-align: top; /*카드 높이가 달라도 위쪽 기준 맞추기 도움받음*/
-  cursor: pointer;
-  transition: all 0.2s ease;
+  
+  /* 살짝 떠오르게 하는거 */
+  /* cursor: pointer;
+  transition: all 0.2s ease; */
 }
-.card:hover {
-  transform: translateY(-6px);   /* 살짝 떠오르기 */
+/* 살짝 떠오르기 하는거 */
+/* .card:hover {
+  transform: translateY(-6px);   
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-}
+} */
 
-/* 패치노트 대표 이미지 */
+/* 패치노트 패치대표 이미지 */
 .updateimg{
   width: 100%;
   height: 260px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  margin-bottom: 5px;  /*이미지 아래 글자랑 사이부분 간격*/
+  margin-bottom: 5px;  
 }
 /*패치 날짜 폰트*/
 .span{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: bold; /*글자 기울기*/
     color: rgb(0, 0, 0);
     
     position: absolute;
