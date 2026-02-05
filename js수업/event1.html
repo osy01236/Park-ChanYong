@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*타입을 고려하지 않는다.   int 건 double 건 string 이건 */
+        num=10;
+        num=3.14;
+        num="문자열";
+
+        var num=13; /*변수 없아 아무것도 없으면 기본값 var
+        */ 
+        num=20;
+        var num=50;
+
+        let a = 40;
+
+        // let a = 60;
+
+        const b = 40;
+
+
+        // b= 50;
+
+        string_word="문자열만"
+        int_num =10;
+
+        let arr= new Array();
+        let ar2= [10,20,30];
+
+        function 가입완료(){
+            alert("가입 되었습니다.");
+            let div = document.getElementById("me")
+            div.style.display="block";
+        }
+        
+        function 클릭미(){
+            alert("클릭이용;")
+        }
+        function 여기얌(){
+           let div = document.getElementById("me")
+            div.style.display="none";
+      
+        }
+        
+
+
+
+
+        function 결제완료(){
+            alert("결제가 완료 되었습니다.");
+            location.href="https://www.naver.com/";
+        }
+        
+        </script>
+
+</head>
+<body>
+    <input>
+    <button onclick="가입완료()">확인</button>  
+    <div id="me" onclick="클릭미()">나를 클릭해줘!! </div>
+    <h3 onmouseover="여기얌()">여기에요 여기에요  여기에용</h3>
+
+    <button onclick="결제완료()">결제</button>
+
+<!--결제 버튼을 클릭하면 결제가 완료 되었습니다. 라고 메세지 띄우기-->
+
+
+
+
+
+</body>
+</html>
+
+
+
+

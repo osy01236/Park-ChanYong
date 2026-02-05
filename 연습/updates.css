@@ -2,24 +2,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* 패딩 포함 크기 계산 */
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .header{
     width: 1200px;
     position: fixed;
     height: 80px;
-    background: rgb(17, 17, 17);
+    background: rgb(10, 20, 40, 1);
     box-sizing: border-box;
+    z-index: 9999;
     
 }
 .square{
 
    width: 1200px;
     padding: 20px;
-    background: rgb(17, 17, 17);
+    background: rgb(10, 20, 40, 1);
     position: relative;
     
     z-index: 1;
     margin: 0px;
+}
+.font1{
+     width: 1200px;
+      font-family: "Jua", sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 header>ul>li {
  
@@ -34,10 +44,11 @@ header>ul>li {
 }
 nav>ul>li a{
     color:white;
-    width: 200px;
-    display: block;
-    background: rgb(17, 17, 17);
+    width: 250px;
+    background: rgb(10, 20, 40);
     padding: 10px 80px;
+    text-decoration: none;
+    justify-content: center;
 
 }
 header ul {
@@ -49,19 +60,21 @@ header ul {
 
  
 }
-.body{
-    width: 1200px;
-    height: 2815px;
+
+#body{
+    background: rgb(10, 20, 40);
 }
-#logo{
+
+#wrap{
+    width: 1200px;
+    position: relative;
+    margin: auto;
+}
+.logo{
     width: 40px;  
     height: 50px;  
-    object-fit: cover; 
-}
-.main1{
-    width: 1200px;
-    background: rgb(228, 85, 133);
-    height: 802px;
+    background: url("./검은바탕로고.jpg") no-repeat;
+    background-size: contain;
 }
 .blank{
     width: 1200px;
@@ -70,8 +83,8 @@ header ul {
 }
 .footer{
     width: 1200px;
-    background: rgb(17, 17, 17);
-    height: 400px;
+    background: rgb(10, 20, 40);
+    height: 200px;
     box-sizing: border-box;
 }
 #footer_team{
@@ -85,77 +98,103 @@ header ul {
 }
 .footer_blank{
     width: 1200px;
-    background: rgb(17, 17, 17);
+    background: rgb(10, 20, 40);
     height: 150px;
 }
 
 /* ========================업데이트 부분========================= */
 
-#body{
-    background-color: #2a323f;
-}
-/* 전체 배경(양옆까지 쭉) */
-.updatesMain{
-   width: 1200px;
-  /* margin: 0 auto; */
-  padding-top: 83px;
+
+/*업데이트 내용 전체 */
+#up{
+  width: 1200px;
+  display: flex;
+  gap :20px;
+  flex-wrap:wrap ;
+  justify-content: space-evenly;
+  
+  margin: 0 auto;
+  background: #466cad;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 
-/* 가운데 영역(스크린샷처럼 가운데 박스) */
+/*메인 1 게임 업데이트 대 제목 */
+
+.Main1{
+   width: 100%;
+   margin: 0 auto;
+   padding-top: 80px;
+}
+
+/* 대 제목 아래 글 */
 .updates1{
   width: 1200px;            
-  margin: 0  auto;          /* 가운데 정렬 */
-  background: #17376f;     
-  padding: 80px 120px;     /* 안쪽 여백 */
-  border-radius: 6px;      /* 모서리 약간 둥글게 (원하면 삭제) */
+  margin: 0  auto;          
+  background: #102c5c;     
+  padding: 80px 120px;     
   color: white;
+  font-style: italic;
 }
 
-.updatesList{
-  margin-top: 30px;
-  /* text-align: center;    업데이트 리스트안의 글자들 가운데 정렬 center */
-}
-.updatesList1{
-  margin-top: 0;
-  /* text-align: center;   */
-}
-.updatesList2{
-  margin-top: 0;
-  /* text-align: center;   */
-}
-
+/*패치 노트 대표 이미지 하늘색 카드*/
 .card{
-  width: 580px;
-  display: inline-block; /* 옆으로 배치 */
-  margin: 10px;      /* 업데이트 내역 중간 간격 */
+  width: 540px;
   background: rgb(170, 207, 242);
-  border-radius: 12px;   /*업데이트 내역 모서리*/
+  border-radius: 12px;   
   padding: 20px;
+
+  overflow: hidden;
   
-  vertical-align: top; /*카드 높이가 달라도 위쪽 기준 맞추기 도움받음*/
+ /* 마우스 올리면 변경되는거 */
+   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
+/* 살짝 떠오르기 하는거 */
+.card:hover {
+  transform: translateY(-6px);   
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
 
-
-/*  이미지 */
+/* 패치노트 패치대표 이미지 */
 .updateimg{
   width: 100%;
   height: 260px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  margin-bottom: 3px;  /*이미지 아래 글자랑 사이부분 간격*/
+  margin-bottom: 5px;  
+}
+/*패치 노트 3줄 가운데 정렬*/
+.path{ 
+  text-align: center;
+  color: rgb(0, 0, 0);
 }
 
-#span{
-    font-size: 16px;
-    
+/*패치 버전 및 날짜 부모 태그*/
+.ver{
+  position: relative;
+  width: 520px;
+}
+
+/*패치 날짜 폰트*/
+.span{
+    font-size: 14px;
+    font-weight: bold; /*글자 굵기*/
     color: rgb(0, 0, 0);
+    
     position: absolute;
-    right: 0;
+    right: 25px;
+    top: 5px;
 }
+
+/*패치 버전 글자색 */
 .h2{
-    position: relative;
-    color: rgb(164, 162, 13);
+  color: rgb(164, 162, 13);
+  
 }
+/* .a{
+  text-decoration: none ;
+} */

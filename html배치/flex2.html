@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수업</title>
+    <style>
+
+         .orange{background: orange;
+            
+        }
+        .green{
+            background: green;
+            
+        }
+        .blue{
+            background: blue;
+            
+        }
+        .pink{
+            background: pink;
+            
+        }
+        .yellow{
+            background: yellow;
+            
+        }
+
+        #parent{
+            width: 1000px;
+            height: 300px;
+            border: 2px solid red;
+            display: flex;
+             /* column-gap: 10px;   gap 할경우 모든 간격이 똑같아진다 */
+            gap :10px;
+            flex-wrap:wrap ;
+        }
+        .child{
+            /*flex-gorw 는 부모의 남은공간을 얼마나 나눠가질지 설정 
+                숫자 비율로 자식에게 크기를 준다.
+                1:1:1:1 네개의 자식태그에 4분의 1 크기를 준다.
+                1:3:1:1 내개의 자식태그중 1,3,4 자식에게는 6분의 1이라는 크기를 주고 2 자식에겐 6분의 3이라는 크기를 준다.
+            */
+            /* flex-grow:1; */
+            /* flex-shrink 는 자식들의 크기에 비해 부모의 크기가 작은 경우 자식들의 크기를 얼마나 줄일건지 정하는 거
+                작동조건
+                    1. flex 컨테이너(부모)의 너비가 정해져 있고
+                    2. 아이템들(자식)의 기본 크기 합이 부모보다 클 경우
+            */
+           width: 200px;
+           /* flex-shrink: 1; */
+           
+           
+           /* flex: 1; grow 와 shrink 의 1 적용  */
+        }
+        .green{
+            /* flex-grow:2; */
+            /* flex-shrink: 2; */
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+ <dvi id="parent">
+        <div class="child orange">1</div>
+        <div class="child green">2</div>
+        <div class="child blue">3</div>
+        <div class="child pink">4</div>
+        <div class="child yellow">5</div>
+        <div class="child green">2</div>
+        <div class="child green">2</div>
+        <div class="child green">2</div>
+        <div class="child green">2</div>
+        <div class="child green">2</div>
+        <div class="child green">2</div>
+        <div class="child green">2</div>
+
+
+    </dvi>
+
+
+</body>
+</html>
+
+
+<!--
+    flex - 자식태그(tiems) 세팅
+
+
+-->
