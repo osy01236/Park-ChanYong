@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        
+    </style>
+    <script>
+        
+
+    </script>
+</head>
+<body>
+    
+    
+    <form>
+        
+        <h4>type = "text"는 문자 숫자 특수문자 입력 가능</h4>
+        <input type="text" name="id" id="id"> <br>    
+        <h4>type="password"는 비밀번호 입력시 사용 모든 텍스트가 점으로 표현 </h4>
+        <input type="password" name="pw"  id="pw"> <br>
+        <h4>type="number"는 숫자만 입력가능 min max step 설정가능</h4>
+        <input type="number" name="age" id="age" min="1" max="20" step="3">  <br>
+        <h4>type ="email"는 이메일 형식을 감지 할 수 있는 타입</h4>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력하세요."> <br>
+        <h4>type="color" 는 색상을 선택할 수 있는 타입</h4>
+        <input type="color" name="bgcolor" id=""> <br>
+        <h4>type="range" 는 슬라이드 형태로 색 음량 밝기 등 조절 </h4>
+        <input type="range" name="solid" id="solid"> <br>
+        <h4>type="date" 는 날짜 선택  </h4>
+        <input type="date" name="select_date" id=""> <br>
+        <h4>type="time"는 시간선택</h4>
+        <input type="time" name="nowTime" id="nowTime" > <br>
+        <h4>type="month"는 연 월 선택</h4>
+        <input type="month" name="month" id="month"> <br>
+        <h4>날짜 타입은 week 연,몇주차 , datetime-local 날짜+시간</h4>
+        <input type="datetime-local" name="datetime" id="datetime"> <br>
+        <h4>type="checkbox" 는 다중선택을 위한 타입 이놈만 유일하게 배열로 저장되는 놈</h4>
+        <input type="checkbox" name="관심사 " value="game" id="game">게임 
+        <input type="checkbox" name="관심사 " value="movie" id="movie">영화 
+        <input type="checkbox" name="관심사 " value="music" id="music">음악 
+      
+      
+        <h4>type="radio"는 여러 선택중 하나 를 선택하기 위한 타입 </h4>
+        <input type="radio" name="관심사" value="banana" id="banana">
+        <label for="banana">바나나</label>  
+        <input type="radio" name="관심사" value="사과">사과           
+        <input type="radio" name="관심사" value="오렌지">오렌지  
+        
+        <h4>type="file" 는 파일 업로드를 위한 타입</h4>
+        <input type="file" name="myfile" id="myfile"> <br>
+        <h4>type="hidden" 는 사용자에게 제공하는 목적이 아닌 페이지 유지 관리 데이터 활용등페이지 처리를 위해 사용된다.</h4>
+        <input type="hidden" name="board_id" value="123" id="">
+
+        
+
+        <button> 등록</button>
+
+        <textarea></textarea>
+        <select></select>
+
+    </form>
+
+
+
+</body>
+</html>
+
+
+
+<!--
+input type 종류
+text
+passwrod
+number  -min  max  step
+         최소  최대   올라가거나 내려가는 숫자 범위? 예) min 1 max 20  일경우 step 에서 3을 주면 1 > 4> 7 순으로 올라감
+email   placeholder
+        입력태그에 회색으로 입력하라고 가상의 글자 보여주는것
+
+
+input 타입에서 text 일반적인 글자 타입 메모타입
+input 태그의 name을 결정할 때 input 태그에 입력하는것과 관련된 name으로 결정 예) id입력칸이면 name="id"
+input 태그의 id는 name과 같은것을 사용하는것이 좋다.
+
+
+
+
+
+
+
+DB 자바 html 
+DB 에서 컬럼이 정하고 테이블을 만들면 자바 또는 html 에서는 클래스명 도는 name 고민없이 같은것으로 매칭하면된다.
+예)DB 테이블명user 컬럼명 name , 자바 클래스명, 변수명 name , html name="name"
+
+
+
+-->

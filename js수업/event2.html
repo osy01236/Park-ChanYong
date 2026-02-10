@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputfield{
+            display: flex;
+            gap: 10px
+        }
+
+    </style>
+    
+    
+    <script>
+
+
+        function 클릭커(){
+            let name =document.getElementById("userName");
+            alert(name.value); 
+            name.value="까마귀";
+
+        
+            let obj= document.querySelector("#userName");
+            console.dir(obj);
+        }
+        function 연도구하기(){
+            // 현제 문서 (document) 에서 아이디가 userAge 인 (ById) 태그(Element)를 
+            // 가져와라(get)
+            //  -> document.getElementById("age")
+            let name = document.getElementById("age");
+            // let age = age.value; //input에 입력값은 vlaue에 있다.
+            alert(2026-name.value);
+        }
+
+
+        function goaddress(){
+            
+            let name =document.getElementById("address");
+            let div = document.getElementById("result1")
+            
+            div.innerText = name.value;
+            //innerHTML, innerText
+            //innerHTML = "<input>"; ->새로운 input 태그가 만들어진다
+            //innerText = "<input>"; -> 그냥 텍스트로만 출력된다
+            // div.innerHTML = "<input>";  
+            div.inertText = "<input>" ;         
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class="inputfield">
+        <input type="text" name="userName" id="userName" >
+        <button onclick="클릭커()">확인</button> 
+    </div>
+    <div>
+
+    </div>
+    <div class="inputfield">
+        <!-- 문제 : 나이를 입력하여 태어난년도를 alert을 출력하세요.-->
+        <input type="number" name="age" id="age">
+        <button onclick="연도구하기()">계산</button>
+        
+    </div>
+    
+    
+    <!--문제 : 주소를 입력하여 div#result1 에 출력하세요.
+    힌트 : div 태그에는 value가 없어요. 대신 innerText에 넣으면 돼요-->
+    
+    <div class="inputField">
+        <input type="text" name="address" id="address" >
+        <button onclick="goaddress()">클릭</button>
+
+
+    </div>
+    <div id="result1" >
+       
+
+    </div>
+   
+
+
+    
+</body>
+</html>
