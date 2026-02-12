@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input type="text" id="keyword">
+        
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+                <th>취미</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr>
+                <td>가무씨</td>
+                <td>21</td>
+                <td>제천시</td>
+                <td>운동 하기</td>
+            </tr>
+            <tr>
+                <td>나무씨</td>
+                <td>22</td>
+                <td>충주시</td>
+                <td>음악 듣기</td>
+            </tr>
+            <tr>
+                <td>다무씨</td>
+                <td>25</td>
+                <td>단양군</td>
+                <td>캠핑 하기</td>
+            </tr>
+            <tr>
+                <td>라무씨</td>
+                <td>28</td>
+                <td>음성군</td>
+                <td>개인 밭일</td>
+            </tr>
+            <tr>
+                <td>마무씨</td>
+                <td>24</td>
+                <td>청주시</td>
+                <td>음식 리뷰</td>
+            </tr>
+            <tr>
+                <td>바무씨</td>
+                <td>32</td>
+                <td>옥천군</td>
+                <td>게임 하기</td>
+            </tr>
+            <tr>
+                <td>사무씨</td>
+                <td>45</td>
+                <td>영동군</td>
+                <td>요리 하기</td>
+            </tr>
+            <tr>
+                <td>아무씨</td>
+                <td>38</td>
+                <td>대전시</td>
+                <td>차량 정비</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+</html>
+<script>
+  let key = document.getElementById("keyword");
+    key.addEventListener('keyup', function(){
+        const rows = Array.from(document.querySelectorAll("#tableBody tr"));
+        let value = this.value;
+        //입력한 텍스트가 포횜된 tr(줄) 만 찾기 
+
+        const res = rows.filter( row =>row.textContent.toLowerCase().includes(value));
+
+        //테이블에 전체 감추기
+        rows.forEach( row => row.style.display="none");
+        //찾은 tr만 보이기
+        res.forEach( row => row.style.display="");
+    });
+
+
+
+</script>
