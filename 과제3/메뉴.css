@@ -34,3 +34,12 @@ body{
   font-size: 12px;
   margin-left: 6px;
 }
+.right button:hover{
+  color: black;
+  background:#a5bcd6
+   
+}
+
+.right button{
+   cursor: pointer;
+}
