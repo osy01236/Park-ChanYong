@@ -1,8 +1,10 @@
-body{
-  margin: 0;
+* {
+  margin: 0;              
+  padding: 0;             
+  box-sizing: border-box; 
 }
 
-.header{
+/* .header{
   background: #0f172a;
   padding: 15px 20px;
 }
@@ -15,14 +17,8 @@ body{
 
 .title{
   color: white;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
-}
-
-.sub{
-  color: #cbd5e1;
-  font-size: 12px;
-  margin-top: 4px;
 }
 
 .right button{
@@ -35,8 +31,25 @@ body{
   margin-left: 6px;
 }
 
+button a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  
+}
+a:hover{
+  color: black;
+}
+.right button:hover{
+  background:#a5bcd6
+   
+}
+
+.right button{
+   cursor: pointer;
+} */
+/*====================================================*/
 .wrap{
-  max-width: 900px;
+  max-width: 800px;
   margin: 18px auto;
   padding: 0 14px 40px;
   display: grid;
@@ -45,8 +58,10 @@ body{
 .card{
   background:#fff;
   border-radius:16px;
-  padding:16px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  padding: 35px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+  
+  
 }
 h2{ margin:0 0 10px; }
 .muted{ color:#6b7280; font-size:13px; }
@@ -76,52 +91,32 @@ h2{ margin:0 0 10px; }
 
 
 .note{
-  border:1px solid #e5e7eb;
+  border:1px solid #b2b3b6;
   border-radius:14px;
   padding:12px;
   margin-top:10px;
 }
-.pill{
-  display:inline-block;
-  background:#eef2ff;
-  color:#3730a3;
-  padding:4px 8px;
-  border-radius:999px;
-  font-size:12px;
-}
+
 .note h3{
   margin:10px 0 8px;
   font-size:16px;
 }
-.choice{
-  background:#f9fafb;
-  border:1px solid #e5e7eb;
-  border-radius:12px;
-  padding:10px 12px;
-  margin-top:8px;
+.list{
+  border: 1px solid rgb(141, 139, 139);
+  border-radius:8px;
+  margin: 5px;
+  width: 100%;
 }
-.choice.correct{
-  border-color:#16a34a;
-  background:#dcfce7;
+.my-answer{
+  background:#ffd6d6;   /* 빨강 */
+  color:#b00000;
 }
-.choice.wrong{
-  border-color:#ef4444;
-  background:#fee2e2;
+
+.correct-answer{
+  background:#d6ffd6;   /* 초록 */
+  color:#006400;
+  font-weight:bold;
 }
-.choice.me{
-  outline: 2px solid rgba(17,24,39,0.15);
-}
-.exp{
-  display:none;
-  margin-top:10px;
-  padding:12px;
-  border:1px solid #e5e7eb;
-  background:#f9fafb;
-  border-radius:12px;
-  color:#374151;
-}
-.toggleBtn{
-  background:#e5e7eb;
-  color:#111827;
-  margin-top:10px;
+.answer-text{
+  color:#006400;
 }
